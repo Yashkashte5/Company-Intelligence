@@ -2,6 +2,8 @@
 
 AI-powered company research app. Users enter their own API keys in the website, submit a company name or website URL, then the app resolves the official website, crawls key pages, enriches results with Serper.dev, asks OpenRouter for structured analysis, displays competitors and pain points, generates a downloadable PDF report, and optionally sends the report to Discord.
 
+![Company Intelligence demo](Demo/demo.png)
+
 ## Features
 
 - Company name or website URL input
@@ -21,7 +23,7 @@ AI-powered company research app. Users enter their own API keys in the website, 
 - Serper.dev Search API
 - OpenRouter Chat Completions API
 - Cheerio website crawling
-- jsPDF report generation
+- pdf-lib report generation
 - Discord Bot API
 
 ## Local Setup
