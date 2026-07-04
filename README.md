@@ -2,6 +2,11 @@
 
 AI-powered company research app. Users enter their own API keys in the website, submit a company name or website URL, then the app resolves the official website, crawls key pages, enriches results with Serper.dev, asks OpenRouter for structured analysis, displays competitors and pain points, generates a downloadable PDF report, and optionally sends the report to Discord.
 
+## Live Demo
+
+- Deployment: [https://company-intelligence-ochre.vercel.app/](https://company-intelligence-ochre.vercel.app/)
+- Source Code: [https://github.com/Yashkashte5/Company-Intelligence](https://github.com/Yashkashte5/Company-Intelligence)
+
 ![Company Intelligence demo](Demo/demo.png)
 
 ## Features
@@ -55,7 +60,11 @@ API and Discord credentials are entered in the UI because the evaluator may prov
 
 ## Deployment
 
-The app is ready for Vercel deployment.
+The app is deployed on Vercel:
+
+[https://company-intelligence-ochre.vercel.app/](https://company-intelligence-ochre.vercel.app/)
+
+To deploy your own copy:
 
 1. Push this project to GitHub.
 2. Import the repository in Vercel.
