@@ -30,6 +30,7 @@ export default function Home() {
   const [error, setError] = useState("");
   const [discordStatus, setDiscordStatus] = useState("");
   const [discord, setDiscord] = useState<DiscordConfig>({});
+  const [discordSaved, setDiscordSaved] = useState(false);
   const [apiKeys, setApiKeys] = useState({ serper: "", openrouter: "" });
   const [showKeys, setShowKeys] = useState(false);
 
@@ -43,6 +44,7 @@ export default function Home() {
 
   function updateDiscord(key: keyof DiscordConfig, value: string) {
     setDiscord((current) => ({ ...current, [key]: value }));
+    setDiscordSaved(false);
   }
 
   function updateApiKey(key: "serper" | "openrouter", value: string) {
@@ -164,6 +166,9 @@ export default function Home() {
               <span>Email Address</span>
               <input value={discord.applicantEmail ?? ""} onChange={(event) => updateDiscord("applicantEmail", event.target.value)} placeholder="email@example.com" />
             </label>
+            <button className="save-button" type="button" onClick={() => setDiscordSaved(true)}>
+              {discordSaved ? "Saved" : "Save Configuration"}
+            </button>
           </section>
         )}
 
@@ -175,7 +180,7 @@ export default function Home() {
           <p><b>4</b> OpenRouter generates the report</p>
         </section>
 
-        <footer>OpenRouter · Serper · jsPDF · Discord</footer>
+        <footer>OpenRouter · Serper · pdf-lib · Discord</footer>
       </aside>
 
       <section className="workspace">

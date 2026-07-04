@@ -88,7 +88,8 @@ h3,
 .new-button,
 .tabs button,
 .composer button,
-.primary {
+.primary,
+.save-button {
   cursor: pointer;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -111,6 +112,14 @@ li::marker,
 .eyebrow,
 .report-card a {
   color: var(--gold);
+}
+
+.save-button {
+  height: 48px;
+  border: 0;
+  background: var(--violet);
+  color: white;
+  font-weight: 900;
 }
 
 .tabs {
